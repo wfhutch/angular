@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Nashville Software School</title>
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<body ng-app="TodoApp">
+  <nav></nav>
+
+  <header></header>
+
+  <section ng-controller="TodoCtrl">
+    <h1>{{ title }}</h1>
+
+    <div>
+      <input type="text" ng-model="macaroni" />
+      <div> {{ macaroni }} </div>
+    </div>
+
+    <div>
+      <ul class="todo-list" ng-repeat="todo in todos">
+        <li>{{todo.name}}<button ng-click="killTodo(todo)">Finish</button></li>
+      </ul>
+    </div>
+
+    <div>
+      <input type="text" ng-model="newTodo">
+      <button ng-click="addTodo()">Create</button>
+    </div>
+ 
+  </section>
+
+  <section ng-controller="SongsCtrl">
+    <h1>{{ title }}</h1>
+
+    <div>
+      <ul class="songs-list" ng-repeat="song in songs">
+        <li><h3>{{song.name}}</h3>
+          <p>By: {{song.artist}}</p>
+          <p>Album: {{song.album}}</p>
+          <button ng-click="killSong(song)">Delete</button>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      Song name:<input type="text" ng-model="newSong.name"/>
+      Artist:<input type="text" ng-model="newSong.artist"/>
+      Album:<input type="text" ng-model="newSong.album"/>
+      <button ng-click="addSong()">Add Song</button>
+    </div>
+
+  </section>
+
+  <article>
+    <header></header>
+    <section></section>
+    <footer></footer>
+  </article>
+
+  <footer></footer>
+<script src="lib/bower_components/angular/angular.min.js"></script>
+<script src="lib/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="app/app.js"></script>
+<script src="app/controllers/Todo.js"></script>
+<script src="app/controllers/songs.js"></script>
+</body>
+</html>
