@@ -20,7 +20,16 @@ app.controller("SongsCtrl", function($scope) {
     { "name": "Hey You",
       "artist": "Pink Floyd", 
       "album": "The Wall" 
+    },    
+    { "name": "Sharp Dressed Man",
+      "artist": "ZZ Top", 
+      "album": "Eliminator" 
+    },    
+    { "name": "Fix You",
+      "artist": "Coldplay", 
+      "album": "X&Y" 
     }
+
   ];
 
   $scope.killSong = function(song) {

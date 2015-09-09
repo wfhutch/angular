@@ -1,7 +1,7 @@
 {
   "todos": [
-  {"name": "Wash the dog", "complete": false},
-  {"name": "Wash the cat", "complete": false},
-  {"name": "Wash the bird", "complete": false}
+  {"name": "Wash the dog", "complete": "complete"},
+  {"name": "Wash the cat", "complete": "complete"},
+  {"name": "Wash the bird", "complete": "incomplete"}
   ]
 }

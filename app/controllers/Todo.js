@@ -4,10 +4,12 @@ app.controller("TodoCtrl", function($scope, $q) {
   $scope.title = "Welcome to your task list";
   $scope.macaroni = "";
 
+
+
   $scope.todos = [
-    { "name": "Mow the lawn", "complete": false },
-    { "name": "Cut the grass", "complete": false },
-    { "name": "Trim the weeds", "complete": false }
+    { "name": "Mow the lawn", "complete": "complete" },
+    { "name": "Cut the grass", "complete": "complete" },
+    { "name": "Trim the weeds", "complete": "incomplete" }
   ];
 
   $scope.killTodo = function(todo) {
