@@ -3,7 +3,7 @@
 
 Angular can be installed here:
 
-[AngularJS](https://angularjs.org/)
+[AngularJS](https://angularjs.org)
 
 If you do not have Node.js, Bower or Sass installed you can get them here:
 
